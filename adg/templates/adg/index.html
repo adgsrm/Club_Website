@@ -1,0 +1,83 @@
+{% extends 'main.html' %}
+
+{% block content %}
+{% load static %}
+      <section class="header">
+        <div class="px-4 pt-5 my-5 text-center border-bottom">
+            <h1 class="display-4 fw-bold">Apple Developers Group SRM</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatem reprehenderit alias, ea sint, magnam, vitae cum amet ratione eius tempora repellat et. Delectus suscipit totam consequuntur asperiores facere fuga.</p>
+
+            </div>
+            <div class="overflow-hidden" style="max-height: 35vh;">
+              <div class="container px-5">
+                <img src="{% static 'header-img4.avif' %}" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+              </div>
+            </div>
+          </div>
+       </section>
+       <br><br>
+       <section class="about">
+        <div class="container col-xxl-8 px-4 py-5" data-aos="fade-in">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="{% static 'aboutimage.avif' %}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">More about us</h1>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, sequi libero dolorem consequuntur magni cumque rerum, exercitationem, odio odit ipsa dicta corrupti aliquam nihil explicabo. Magnam, autem! Libero nisi enim, incidunt inventore quibusdam dolor est repudiandae necessitatibus perspiciatis sit dolorem, optio eligendi consectetur quam iste veniam exercitationem impedit animi. Deserunt?</p>
+               
+              </div>
+            </div>
+          </div>
+          <div class="container col-xxl-8 px-4 py-5" data-aos="fade-in">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">What we do</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, sequi libero dolorem consequuntur magni cumque rerum, exercitationem, odio odit ipsa dicta corrupti aliquam nihil explicabo. Magnam, autem! Libero nisi enim, incidunt inventore quibusdam dolor est repudiandae necessitatibus perspiciatis sit dolorem, optio eligendi consectetur quam iste veniam exercitationem impedit animi. Deserunt?</p>
+                   
+                  </div>
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="{% static 'aboutimage3.avif' %}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              </div>
+              
+            </div>
+          </div>
+          
+       </section>
+
+       <section class="domains" >
+        <div class="container px-4 py-5" id="custom-cards">
+            <h2 class="pb-2 border-bottom">Our Domains</h2>
+        
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5" data-aos="fade-in">
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg  custom-card" id="creatives-card">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Creatives</h2>
+                    
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg custom-card"id="corporate-card" >
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Corporate</h2>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg custom-card" id="technical-card">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Technical</h2>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       </section>
+       
+    {% endblock %}

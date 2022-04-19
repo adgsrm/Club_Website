@@ -1,0 +1,29 @@
+{% extends 'main.html' %}
+
+
+{% block content %}
+<section class="members mt-5 pt-5 container text-center">
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Blogs</h1>
+            <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aut consectetur iste id repellat unde error nesciunt libero nostrum perferendis.</p>
+           
+          </div>
+        </div>
+      </section>
+</section>
+      <section class="allblogs container">
+
+        {% for blog in all_blogs %}
+       <div class="row">
+           <h2>{{blog.title}}</h2>
+           <p>{{blog.body|truncatechars:300}} <a href="{% url 'blog-content' blog.id %}"> Read More</a></p>
+       </div>
+
+       {% endfor %}
+      </section>
+
+
+
+{% endblock %}

@@ -1,0 +1,33 @@
+.lni{
+    transform: scale(1.2);
+}
+
+
+.custom-card{
+    border-radius: 20px;
+   transition: all 1s;
+}
+
+.custom-card:hover{
+    transform: scale(1.1);
+}
+
+.navbar{
+      backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(10, 10, 10, 0.829);
+
+    border: 1px solid rgba(26, 25, 25, 0.125);
+}
+
+#creatives-card{
+    background-image: url('./creativesimg.2avif.avif');
+}
+
+#corporate-card{
+    background-image: url('./corporateimage1.avif');
+}
+
+#technical-card{
+    background-image: url('./technical-img1.avif');
+}
