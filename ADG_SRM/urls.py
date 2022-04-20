@@ -27,7 +27,7 @@ urlpatterns = [
     path("team/",views.team,name="team"),
     path("events/",views.events,name="events"),
     path("blogs/",views.all_blogs,name="blogs"),
-    path("blogs/<int:blog_id>/",views.blog,name="blog-content"),
+   
 ]
 
 urlpatterns += static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)

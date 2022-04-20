@@ -1,3 +1,4 @@
+
 .lni{
     transform: scale(1.2);
 }
@@ -19,6 +20,7 @@
 
     border: 1px solid rgba(26, 25, 25, 0.125);
 }
+
 
 #creatives-card{
     background-image: url('./creativesimg.2avif.avif');

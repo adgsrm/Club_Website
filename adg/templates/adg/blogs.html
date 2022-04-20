@@ -7,7 +7,8 @@
         <div class="row py-lg-5">
           <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="fw-light">Blogs</h1>
-            <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aut consectetur iste id repellat unde error nesciunt libero nostrum perferendis.</p>
+            <p class="lead text-muted">A place where we share a piece of our mind.</p>
+            
            
           </div>
         </div>
@@ -15,13 +16,30 @@
 </section>
       <section class="allblogs container">
 
-        {% for blog in all_blogs %}
-       <div class="row">
-           <h2>{{blog.title}}</h2>
-           <p>{{blog.body|truncatechars:300}} <a href="{% url 'blog-content' blog.id %}"> Read More</a></p>
-       </div>
+       
+       
 
-       {% endfor %}
+
+       <div class="row text-center">
+        {% for blog in all_blogs %}
+        <div class="col-md-6 col-lg-3 mt-5 px-5">
+            <div class="card  text-center" style="width: 18rem;">
+                <img src="{{ blog.image.url }}" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{ blog.title}}</h5>
+                  <p class=" text-secondary ">-{{blog.author}}</p>
+                  <p class="card-text">{{blog.body}}</p>
+                  
+                  <span><a href="{{blog.link}}" class="btn btn-outline-secondary">Read More</a></span>
+                 
+                 
+                </div>
+            </div>
+               
+        </div>
+        {% endfor %}
+    </div>
+    
       </section>
 
 

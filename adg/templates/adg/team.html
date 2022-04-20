@@ -6,8 +6,8 @@
     <section class="py-5 text-center container">
         <div class="row py-lg-5">
           <div class="col-lg-6 col-md-8 mx-auto">
-            <h1 class="fw-light">Our Team.</h1>
-            <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aut consectetur iste id repellat unde error nesciunt libero nostrum perferendis.</p>
+            <h1 class="fw-light">Meet the Team</h1>
+            <p class="lead text-muted">Our greatest asset</p>
            
           </div>
         </div>
@@ -17,10 +17,10 @@
         {% for member in team %}
         <div class="col-md-6 col-lg-3 mt-5 px-5">
             <div class="card custom-card text-center" style="width: 18rem;">
-                <img src="{{ member.image.url }}" class="card-img-top" alt="...">
+                <img src="{{ member.image.url }}" class="card-img-top img-fluid alt="...">
                 <div class="card-body">
                   <h5 class="card-title">{{ member.name}}</h5>
-                  <p class="card-text">{% for tag in member.tags.all %} <span class="badge bg-secondary ms-2">{{ tag }}</span>  {% endfor %}</p>
+                  <p class="card-text">{% for tag in member.tags.all %} <span class="badge bg-secondary ms-2">{{ tag }}</span>  {% endfor %} {% if member.one_liner %}<br> <br> <span class="text-muted">{{member.one_liner}}</span>{% endif %}</p>
                   {% if member.linkedin %}
                 <a href="{{ member.linkedin}}" class="ms-2" style="color: grey;"><i class="lni lni-linkedin-original"></i></a>
                 {% endif %}
@@ -30,6 +30,10 @@
                 {% if member.instagram %}
                 
                 <a href="{{ member.instagram}}" class="ms-2" style="color: grey;"><i class="lni lni-instagram-original"></i></a>
+                {% endif %}
+                {% if member.twitter %}
+                
+                <a href="{{ member.twitter}}" class="ms-2" style="color: grey;"><i class="lni lni-twitter-original"></i></a>
                 {% endif %}
                 </div>
             </div>
